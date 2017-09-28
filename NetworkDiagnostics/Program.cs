@@ -12,7 +12,7 @@ namespace NetworkDiagnostics
             while (true)
             {
                 Console.Clear();
-                Console.Write("Which tool would you like to use?\n0 - Close the tool\n1 - Port Checker\n2 - Ping Utility\n3- Netstat\nEnter a number: ");
+                Console.Write("Which tool would you like to use?\n0 - Close the tool\n1 - Port Checker\n2 - Ping Utility\n3 - Netstat\nEnter a number: ");
 
                 var input = Console.ReadLine();
                 int toolNumber;

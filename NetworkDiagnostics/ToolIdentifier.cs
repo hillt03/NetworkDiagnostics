@@ -98,7 +98,7 @@ namespace NetworkDiagnostics
                     Console.Title = "Netstat";
                     Console.Clear();
                     Netstat netstat = new Netstat();
-                    var stat = netstat.GetNetStatPorts();
+                    netstat.GetNetStatPorts();
                     Console.WriteLine("Press any key to continue.");
                     Console.ReadKey();
                     break;
