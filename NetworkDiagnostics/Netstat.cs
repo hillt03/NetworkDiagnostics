@@ -37,11 +37,11 @@ namespace NetworkDiagnostics
 
                     if (exitStatus != "0")
                     {
-                        // Command Errored. Handle Here If Need Be
+                        // Command errored, handle here.
                     }
 
-                    //Get The Rows
-                    string[] rows = System.Text.RegularExpressions.Regex.Split(content, "\r\n");
+                    // Get the rows
+                    string[] rows = Regex.Split(content, "\r\n");
                     foreach (string row in rows)
                     {
                         //Split it
@@ -75,9 +75,8 @@ namespace NetworkDiagnostics
             return procName;
         }
 
-        // ===============================================
-        // The Port Class We're Going To Create A List Of
-        // ===============================================
+
+        // The port class that we're going to create a list of.
         public class Port
         {
             public string name
